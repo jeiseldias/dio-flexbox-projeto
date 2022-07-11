@@ -16,7 +16,7 @@ ul {
     display: flex;
     justify-content: space-between;
 
-    max-width: 912px;
+    max-width: 992px;
     margin: auto;
 }
 
@@ -54,10 +54,10 @@ ul {
     color: #ffffff;
 }
 
-.planos {
+.planos-coluna {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
     margin-bottom: 64px;
 }
@@ -99,7 +99,7 @@ ul {
 
 .section-title {
     font-size: 20px;
-    margin-bottom: 64px;
+    margin-bottom: 48px;
 }
 
 .servicos {
@@ -187,4 +187,60 @@ ul {
 
 .topicos-coluna p {
     margin-bottom: 16px;
+}
+
+@media(max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .planos {
+        padding: 0 20px 50px 20px;
+    }
+
+    .planos-coluna {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 48px;
+        margin-bottom: 0;
+    }
+
+    .planos-box {
+        margin-bottom: 64px;
+    }
+
+    #quem-somos {
+        flex-direction: column-reverse;
+    }
+    
+    .servicos {
+        padding: 50px 20px;
+    }
+
+    .servicos-colunas {
+        flex-direction: column;
+    }
+
+    .servicos-icone {
+        margin-bottom: 64px;
+    }
+
+    .servicos-icone img {
+        width: 40%;
+        margin-bottom: 24px;
+    }
+
+    .topicos {
+        margin-bottom: 64px;
+    }
+
+    .topicos-coluna {
+        align-items: center;
+    }
+
+    .topicos-coluna p {
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
 }
